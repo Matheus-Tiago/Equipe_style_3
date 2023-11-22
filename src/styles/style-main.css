@@ -1,63 +1,217 @@
-* {
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-}
 body {
-
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
 }
 header {
+    max-width: 1100px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    width: 95vw;
 }
-.NavBarMenu {
-    margin: 0 10px;
-}
-.LogoApple {
-    height: 50px;
-    width: 50px;
-}
-.Carrinho {
-    height: 25px;
-    width:25px;
-}
-.Perfil {
-    height: 25px;
-    width: 25px;
-}
-.container {
+.LeftSide {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.LadoUm {
+.LeftSide ul {
+    list-style: none;
     display: flex;
+    position: relative;
+}
+.LeftSide a {
+    text-decoration: none;
+    color: gray;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    font-size: larger;
+    font-weight: 600;   
+}
+.LeftSide a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.RightSide {
+    display: flex;
+    position: relative;
     flex: 1;
-    justify-content: center;
-    align-items: center;
-    background-color: #b9b9b9;
-    height: 100vh;
-    width: auto;
+    justify-content: space-around;
+    max-width: 200px;
 }
-.LadoDois {
+.RightSide ul{
+    list-style: none;
+    display: flex;
+    position: relative;
+    padding-right: 30px;
+
+}
+.RightSide li {
+    display: flex; 
+    position: relative;
+    justify-content: space-around;
+    padding: 10px;
+    top: 20px;
+    width: 20px;
+    
+}
+.RightSide li:hover {
+    background-color: rgba(169, 169, 169, 0.418);
+    margin-bottom: 50px ;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.Left {
+    display: flex;
+    flex-direction: column;
+    max-height: 1000px;
+    width: 50%;
+}
+.Right {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex: 1;
+    justify-content: space-between;
+    top: -10px;
 }
-.IphoneImage {
-    height: 60vh;
-    width: auto;
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-height: 1000px;
+    width: 100%;
 }
-.IphoneTitle {
-    font-size: 60px;
-    margin: 30px;
+.Right main  iframe {
+    border: none;
 }
-.IphoneDescription {
-    margin: 30px;
+.Button {
+    display: flex;
+    position: relative;
+    top: -50px;
+    left: 80px;
+    width: 200px;
+ 
 }
-.IphoneValue {
-    margin: 30px;
+.Button button {
+    width: 100px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    border: none;
 }
+button:hover {
+    background-color: rgb(185, 176, 176);
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+
+
+
+.Father {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 200px;
+    margin-left: 55px;
+    top: -30px;
+
+
+}
+
+.Son1 {
+    position:  absolute;
+    height: 4px;
+    width: 4px;
+    border-radius: 50px;
+    background-color: white;
+    left: 50px;
+    border: 1px solid black;
+}
+.Son2 {
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    border-radius: 50px;
+    background-color: white;
+    left: 65px;
+    border: 1px solid black;
+}
+.Son3 {
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    border-radius: 50px;
+    background-color: white;
+    left: 80px;
+    border: 1px solid black;
+}
+.Son4 {
+    position: absolute;
+    height:  4px;
+    width:  4px;
+    border-radius: 50px;
+    background-color: white;
+    left: 95px;
+    border: 1px solid black;
+}
+.Son5 {
+    position: absolute;
+    height:  4px;
+    width:  4px;
+    border-radius: 50px;
+    background-color:black;
+    border: 2px solid black;
+
+}
+.Father .Son5 {
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes animacao {
+    0% {margin-left: -95px;}
+    20% {margin-left: -95px;}
+    25% {margin-left: -65px; }
+    45% {margin-left: -65px;}
+    50% {margin-left: -35px;}
+    70% {margin-left: -35px;}
+    75% {margin-left: -5px;}
+    95% {margin-left: -5px;}
+    100% {margin-left: -95px;}
+    }
+
+    .ImgMaiorQue {
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        background-color: rgb(230, 230, 230);
+        padding: 8px;
+        border-radius: 50%;
+        left: 110px;
+        
+    }
+    .ImgMenorQue {
+        position: absolute;
+        height: 15px;
+        width:15px;
+        background-color: rgb(230, 230, 230);
+        padding: 8px;
+        border-radius: 50px;
+        left: 10px;
+        
+    }
+    .ImgMaiorQue:hover {
+        background-color: rgb(169, 169, 169);
+        cursor: pointer;
+    }
+    .ImgMenorQue:hover {
+        background-color: rgb(169, 169, 169);
+        cursor: pointer;
+    }

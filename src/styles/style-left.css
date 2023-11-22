@@ -1,0 +1,97 @@
+body {
+    background-color: #FCDCD2;
+    display: flex;
+    flex-direction: column;
+    animation-name: animacao2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+    @keyframes animacao2 {
+    0% {background-color:#FCDCD2;}
+    20% {background-color:#FCDCD2;}
+    25% {background-color: cadetblue; }
+    45% {background-color: cadetblue;}
+    50% {background-color: blueviolet;}
+    70% {background-color: blueviolet;}
+    75% {background-color: rgba(0, 0, 0, 0.39);}
+    95% {background-color: rgba(0, 0, 0, 0.39);}
+    100% {background-color:#FCDCD2;}
+    }
+header {
+    display: flex;
+    justify-content: space-between;
+
+}
+header img {
+    padding-left: 30px;
+}
+nav {
+    padding: 10px;
+    margin-bottom: 65px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+nav a {
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: 600;   
+}
+
+nav a:hover {
+    color: grey;
+}
+.Product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.Product li:hover {
+    color: grey;
+}   
+nav p {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-size: larger;
+    top: 10px;
+    right: 45px;
+    
+}
+main {
+    display: flex;
+    position: relative;
+    margin: auto;
+}
+
+
+.galery {
+    height: 410px;
+    width: 410px;
+    overflow: hidden;
+}
+.fotos {
+    display: flex;
+}
+.galery .fotos {
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes animacao {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -400px;}
+    45% {margin-left: -400px;}
+    50% {margin-left: -800px;}
+    70% {margin-left: -800px;}
+    75% {margin-left: -1200px;}
+    95% {margin-left: -1200px;}
+    100% {margin-left: -1600px;}
+}
