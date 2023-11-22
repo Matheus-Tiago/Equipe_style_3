@@ -214,3 +214,7 @@ button:hover {
         background-color: rgb(169, 169, 169);
         cursor: pointer;
     }
+    .Adverts {
+        display: flex;
+        margin-left: 50px;
+    }
