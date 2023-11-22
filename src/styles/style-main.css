@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body {
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 95vw;
+}
+.NavBarMenu {
+    margin: 0 10px;
+}
+.LogoApple {
+    height: 50px;
+    width: 50px;
+}
+.Carrinho {
+    height: 25px;
+    width:25px;
+}
+.Perfil {
+    height: 25px;
+    width: 25px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LadoUm {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: #b9b9b9;
+    height: 100vh;
+    width: auto;
+}
+.LadoDois {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.IphoneImage {
+    height: 60vh;
+    width: auto;
+}
+.IphoneTitle {
+    font-size: 60px;
+    margin: 30px;
+}
+.IphoneDescription {
+    margin: 30px;
+}
+.IphoneValue {
+    margin: 30px;
+}
